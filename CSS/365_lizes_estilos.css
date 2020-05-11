@@ -1,0 +1,75 @@
+body {
+    background-image: url('https://ak.picdn.net/shutterstock/videos/23065147/thumb/1.jpg');
+    background-size: auto 100vh;
+    font-family: Arial;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  .menu ul {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #191970;
+    text-decoration: underline;
+  }
+  
+  .siteLogo {
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    color: #fff;
+    display: block;
+    height: 200px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  img {
+    height: 20px;
+  }
+  
+  .siteIcones {
+    width: 100px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around
+  }
+  
+  .siteTitulo {
+    font-family: monospace;
+    font-size: 80px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  .lizVidotti {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  } 
+  
+  .siteSubTitulo {
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 0px;
+    text-align: center;
+  } 
