@@ -1,106 +1,202 @@
 /* Soft Reset do CSS */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
     background-image: url('../IMG/background_cement.jpg');
     background-size: auto 100vh;
-    font-family: Arial;
-    font-size: 10px;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 20px;
   }
 
-@media (min-width: 500px) {
-    body {
-      font-size: 20px;
-    }
-}
-
-header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-.menu {  
-  background-color: rgba(0,0,0,0.4);
-  position: fixed;
-  top: 0;
-  width: 100vw;
+  .menu {  
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    width: 100vw;
   }
 
-.menu ul {
-  display: flex;
-  justify-content: space-around;
-}
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.menu li {
+  .menu li {
     list-style: none;
   }
   
-.menu a {
+  .menu a {
     color: white;
     display: block;
     padding: 5px 10px;
     text-decoration: none;
   }
   
-.menu a:hover {
+  .menu a:hover {
     background-color: rgba(255,255,0,0.1);
     color: #c8a2c8;
     text-decoration: underline;
   }
   
-.siteLogo {
+  .siteLogo {
+    align-items: center;
     background-color: rgba(0,0,0,0.3);
     border-radius: 10px;
     color: #fff;
     display: block;
-    height: 300px;
+    height: 30vw;
+    justify-content: center;
     width: 90vw;
   }
 
-.siteTitulo {
-    font-family: monospace;
-    font-size: 6em;
+  .siteTitulo {
+    font-family: 'Parisienne', cursive;
+    font-size: 5em;
     font-weight: normal;
+    margin-top: 0.7em;
     text-align: center;
   }
   
-.lizVidotti {
-    font-family: monospace;
-    font-size: 3em;
+  .lizVidotti {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.5em;
     font-weight: normal;
+    margin-top: 0.5em;
     text-align: center;
   } 
   
-.siteSubTitulo {
-    font-family: monospace;
-    font-size: 2em;
+  .siteSubTitulo {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1em;
     font-weight: normal;
     text-align: center;
   }
   
-.siteIcones {
-    width: 100px;
+  .siteIcones {
+    gap: 0.5em;
+    width: 50px;
     margin-left: auto;
-    margin-top: 10px;
+    margin-top: 1em;
     margin-right: auto;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
   }
-
-img {
-    height: 30px;
-  }
-
-.img_365art{
-    width: 600px;
-    height: 600px;
-  }
-
-section {
   
-}
+  img {
+    height: 40px;
+  }
+
+  .about365 {
+    height: 100vh;
+    padding: 3em;
+  }
+
+  .about365 .about365Caixa {
+    margin-top: 4em;
+    display: grid;
+    gap: 4em;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    object-fit: cover;
+  }
+
+  .about365 h2 {
+    border-bottom: black solid 1px;
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .texto {
+    background-color: rgba(255,255,255,0.6);
+    padding: 0.8em;
+  }
+
+  .about365 p {
+    text-align: justify;
+    text-indent: 1em;
+    font-weight: bold;
+  }
+
+  .about365 img {
+    height: 360px;
+    width: 360px;
+  }
+
+  ._365art {
+    height: 100vh;
+    padding: 3em;
+  }
+
+  ._365art h2 {
+    border-bottom: black solid 1px;
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  ._365art .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(6, 175px);
+    justify-content: center;
+  }
+
+  ._365art figure {
+    text-align: center;
+  }
+
+  .img_365art{
+    width: 175px;
+    height: 175px;
+  }
+
+  .img_365art:hover {
+    transform: scale(1.5);
+  }
+
+  ._365art figcaption {
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  ._365dev {
+    height: 100vh;
+    padding: 3em;
+  }
+
+  ._365publi {
+    height: 100vh;
+    padding: 3em;
+  }
+
+  ._365publi h2 {
+    border-bottom: black solid 1px;
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  ._365publi a {
+    color: black;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+  }
+
+  ._365publi a:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #c8a2c8;
+    text-decoration: underline; 
+  }
