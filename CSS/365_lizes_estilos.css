@@ -39,11 +39,12 @@
     display: block;
     padding: 5px 10px;
     text-decoration: none;
+    transition: background-color 1s, text-shadow 1s;
   }
   
   .menu a:hover {
-    background-color: rgba(255,255,0,0.1);
-    color: #c8a2c8;
+    background-color: 	#484848;
+    text-shadow: 0px 0px 10px whitesmoke;
     text-decoration: underline;
   }
   
@@ -82,31 +83,29 @@
   }
   
   .siteIcones {
-    gap: 0.5em;
+    gap: 1em;
     width: 50px;
     margin-left: auto;
-    margin-top: 1em;
+    margin-top: 3em;
     margin-right: auto;
     display: flex;
     justify-content: space-around;
   }
   
-  img {
-    height: 40px;
+  .siteIcones a {
+    color: whitesmoke;
+    font-size: 2em;
+    transition: color 0.5s, text-shadow 0.5s ;
+  }
+
+  .siteIcones a:hover {
+    color: 	#484848;
+    text-shadow: 0px 0px 5px whitesmoke;
   }
 
   .about365 {
     height: 100vh;
     padding: 3em;
-  }
-
-  .about365 .about365Caixa {
-    margin-top: 4em;
-    display: grid;
-    gap: 4em;
-    grid-template-columns: 400px 400px;
-    justify-content: center;
-    object-fit: cover;
   }
 
   .about365 h2 {
@@ -117,22 +116,23 @@
     margin-bottom: 1em;
   }
 
-  .texto {
-    background-color: rgba(255,255,255,0.6);
-    padding: 0.8em;
+  .about365 .about365Caixa {
+    margin-top: 4em;
   }
 
   .about365 p {
+    margin-bottom: 1em;
     text-align: justify;
-    text-indent: 1em;
+    text-indent: 2.5em;
     font-weight: bold;
   }
 
-  .about365 img {
+  .about365 .avatar img {
+    float: right;
     height: 360px;
+    margin-left: 3em;
     width: 360px;
   }
-
   ._365art {
     height: 100vh;
     padding: 3em;
@@ -155,6 +155,7 @@
 
   ._365art figure {
     text-align: center;
+    transition: 0.3s;
   }
 
   .img_365art{
@@ -162,7 +163,7 @@
     height: 175px;
   }
 
-  .img_365art:hover {
+  ._365art figure:hover {
     transform: scale(1.5);
   }
 
@@ -173,6 +174,68 @@
   ._365dev {
     height: 100vh;
     padding: 3em;
+  }
+
+  ._365dev h2 {
+    border-bottom: black solid 1px;
+    font-family: 'Parisienne', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  ._365dev .grid {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    gap: 1em;
+    grid-template-columns: repeat(4, 8em);
+  }
+
+  ._365dev .flipcard {
+    perspective: 500px;
+    height: 8em;
+    width: 8em;
+  }
+
+  ._365dev .card {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+  }
+
+  ._365dev .flipcard:hover .card{
+    transform: rotateY(180deg);
+  }
+
+  ._365dev .cardverso {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  ._365dev .cardfrente {
+    color: #363636;
+    font-size: 6em;
+    text-align: center;
+  }
+
+  ._365dev .cardverso {
+    background-color: #363636;
+    border-radius: 30%;
+    height: 8em;
+    padding: 2.6em 0.5em 3em 0.5em;
+    text-align: center;
+    transform: rotateY(180deg);
+    width: 8em;
+  } 
+
+  .grid .cardverso a {
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px whitesmoke;
   }
 
   ._365publi {
@@ -199,4 +262,14 @@
     background-color: rgba(0,0,0,0.5);
     color: #c8a2c8;
     text-decoration: underline; 
+  }
+
+  ._365publi p {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  ._365publi iframe {
+    margin-left: 25vw;
   }

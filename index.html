@@ -6,6 +6,7 @@
     <title>365 Lizes</title>
     <link rel="stylesheet" href="./CSS/365_lizes_estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Parisienne&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a79202eb1e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,34 +26,37 @@
             <h2 class = "lizVidotti">By Liz Vidotti</h2>
             <h2 class = "siteSubTitulo">Art & Dev</h2>
             <div class = "siteIcones">
-              <a href = "mailto:liz.vidotti@gmail.com"><img src = "https://ap.imagensbrasil.org/images/2019/10/17/icone-email.png"></a>
-              <a href = "https://www.linkedin.com/in/elisetevidotti/"><img src = "https://cdn.icon-icons.com/icons2/652/PNG/512/linkedin_icon-icons.com_59873.png"></a>
-              <a href = "https://codepen.io/lizvidotti91"><img src = "https://ps.w.org/codepen-embed-block/assets/icon-256x256.png?rev=2230427"></a>
-              <a href = "https://github.com/lizvidotti91"><img src = "https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/github-512.png"></a>
-              <a href = "https://www.instagram.com/365lizes/"><img src = "https://image.flaticon.com/icons/png/512/2168/2168302.png"></a>
+              <a href = "mailto:liz.vidotti@gmail.com"><i class="fas fa-at"></i></a>
+              <a href = "https://www.linkedin.com/in/elisetevidotti/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href = "https://codepen.io/lizvidotti91" target="blank"><i class="fab fa-codepen"></i></a>
+              <a href = "https://github.com/lizvidotti91" target="blank"><i class="fab fa-github"></i></a>
+              <a href = "https://www.instagram.com/365lizes/" target="blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </header>
 
-    <a name = "About me">
-      <section class = "about365">
+    <section class = "about365" id = "About me">
         <h2>About Me</h2>
         <div class = "about365Caixa">
-          <div class = "texto">
+          <figure class = "avatar">
+            <img src = "./IMG/perfil.png">
+          </figure>
             <p>
               Sou formada em Arquitetura e Urbanismo pela Universidade Salvador, em 2014, e Especialista em Assitência Técnica para Habitação e Direito à Cidade pela FAUFBA, em 2016. Atualmente, estou cursando Técnico em Desenvolvimento de Sistemas no Senai Cimatec.
             </p>
             <p>
-              Esse pequeno site é fruto da #ImersãoCSS, promovido pela Alura, durante os dias 11 a 15 de maio de 2020.
+              Minhas grandes paixões, desde a infância, são os livros e desenhos. Quando era pequena, meu sonho era poder trabalhar como desenhista dos quadrinhos da Turma da Mônica. Hoje, mantenho os desenhos como hobbie, e compartilho eles nas minhas redes sociais.
             </p>
-          </div>
-          <img src = "./IMG/perfil.png">
+            <p>
+              Também sou apaixonada por itens de papelaria. Tenho vários lápis, gizes de cera, lápis pastel, canetinhas, cadernos. E livros. Muitos livros, principalmente os romances e livros de ficcção.
+            </p>
+            <p>
+              Esse pequeno site é fruto da <a href = "https://www.alura.com.br/imersao-css" target = "blank">#ImersãoCSS</a>, promovido pela Alura, durante os dias 11 a 15 de maio de 2020.
+            </p>
         </div>
-      </section>
-    </a>
+    </section>
 
-    <a name = "365 Art">
-      <section class = "_365art">
+    <section class = "_365art" id = "365 Art">
         <h2>365 Art</h2>
       
         <div class = "grid">
@@ -105,21 +109,109 @@
             <figcaption>Mandalas</figcaption>
           </figure>
         </div>      
-      </section>
-    </a>
+    </section>
 
-    <a name = "365 Dev">
-      <section class = "_365dev">
-        <h2>EM CONSTRUÇÃO</h2>
-      </section>
-    </a>
+    <section class = "_365dev" id = "365 Dev">
+      <h2>365 Dev</h2>
+      <div class="grid">
 
-    <a name = "365 Publi">
-      <section class = "_365publi">
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="fas fa-crown"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/RwPzjwY" target = "blank" alt = "Pixel Art Princess Peach">Pixel Art Princess</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/YzXoryZ" target = "blank" alt = "Pixel Art Heart">Pixel Art Heart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+                <i class="far fa-file-alt"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/eYpmwzx" target = "blank" alt = "Modelo de Ficha">Modelo de Ficha</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/XWmJMXN" target = "blank" alt = "Modelo de Certificado">Modelo de Certificado</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/ZEbEmqG" target = "blank" alt = "Calculadora de App">Calculadora de App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/RwWbOod" target = "blank" alt = "Tabuada">Tabuada</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="far fa-thumbs-up"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/JjYPmmY" target = "blank" alt = "Botão de Likes">Botão de Likes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "flipcard">
+          <div class = "card">
+            <div class = "cardfrente">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class = "cardverso">
+              <a href = "https://codepen.io/lizvidotti91/pen/vYOoNJV" target = "blank" alt = "Meses do Ano">Meses do Ano</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class = "_365publi" id = "365 Publi">
         <h2>365 Publi</h2>
-        <a href = "https://residencia-aue.ufba.br/pt-br/elisete-cristina-vidotti-da-rocha">Projeto Final da Pós-Graduação: Caracterização Ambiental e Análise das Unidades de Paisagem para a Implantação do Parque Theodoro Sampaio.</a><br>
-        <a href = "http://www.etbces.net.br/images/etbces/anais/2017/04_artigo_praticas-colaborativas.pdf">Artigo Publicado no VII ETBCES: Práticas Colaborativas para a implantação do Parque Theodoro Sampaio em Salvador - BA</a>
+        <a href = "https://residencia-aue.ufba.br/pt-br/elisete-cristina-vidotti-da-rocha" target="blank">Projeto Final da Pós-Graduação: Caracterização Ambiental e Análise das Unidades de Paisagem para a Implantação do Parque Theodoro Sampaio.</a><br>
+        <a href = "http://www.etbces.net.br/images/etbces/anais/2017/04_artigo_praticas-colaborativas.pdf" target="blank">Artigo Publicado no VII ETBCES: Práticas Colaborativas para a implantação do Parque Theodoro Sampaio em Salvador - BA</a><br>
+        <p>Reportagem sobre Residência AU+E e Parque Theodoro Sampaio</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9EYDXkJ3znk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
-    </a>
   </body>
 </html>
